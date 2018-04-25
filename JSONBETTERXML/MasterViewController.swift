@@ -11,12 +11,14 @@ class MasterViewController: UITableViewController {
     
     var detailViewController: DetailViewController? = nil
     var objects = [DataObject]()
+    
     //the json file url
     //let URL_HEROES = "https://api.myjson.com/bins/70xp1"
     //the label we create
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        DataController.getJsonFromUrl()
         //        // Do any additional setup after loading the view, typically from a nib.
         //        navigationItem.leftBarButtonItem = editButtonItem
         //
