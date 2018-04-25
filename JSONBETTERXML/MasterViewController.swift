@@ -10,14 +10,13 @@ import UIKit
 class MasterViewController: UITableViewController {
     
     var detailViewController: DetailViewController? = nil
-    var objects = [String]()
+    var objects = [DataObject]()
     //the json file url
-    let URL_HEROES = "https://api.myjson.com/bins/70xp1"
+    //let URL_HEROES = "https://api.myjson.com/bins/70xp1"
     //the label we create
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getJsonFromUrl();
         //        // Do any additional setup after loading the view, typically from a nib.
         //        navigationItem.leftBarButtonItem = editButtonItem
         //
@@ -41,7 +40,7 @@ class MasterViewController: UITableViewController {
     
     @objc
     func insertNewObject(_ sender: Any) {
-        objects.insert(String(), at: 0)
+        objects.insert(DataObject(), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
     }
@@ -80,31 +79,7 @@ class MasterViewController: UITableViewController {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    
-    func getJsonFromUrl(){
-        //creating a NSURL
-        let url = NSURL(string: URL_HEROES)
-        
-        //fetching the data from the url
-        URLSession.shared.dataTask(with: (url as URL?)!, completionHandler: {(data, response, error) -> Void in
-            
-            if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
-                
-                //printing the json in console
-                print(jsonObj!.value(forKey: "stuff")!)
-                
-                //getting the avengers tag array from json and converting it to NSArray
-                if let heroeArray = jsonObj!.value(forKey: "stuff") as? NSArray {
-                    //looping through all the elements
-                    for name in heroeArray{
-                        //adding the name to the array
-                        self.objects.append((name as? String)!)
-                    }
-                    
-                }
-            }
-        }).resume()
-    }
+
     
     
     //    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
