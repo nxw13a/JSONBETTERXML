@@ -39,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="203"/>
                                 <subviews>
                                     <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="Title of the thing" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-y9-sOw">
-                                        <rect key="frame" x="146" y="8" width="221" height="39"/>
+                                        <rect key="frame" x="154" y="8" width="221" height="39"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -82,15 +82,15 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="studio/network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCB-uI-BSx">
-                                        <rect key="frame" x="146" y="104" width="111" height="31"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="year label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXb-Nr-mVP">
+                                        <rect key="frame" x="146" y="44" width="102" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="year label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXb-Nr-mVP">
-                                        <rect key="frame" x="146" y="44" width="102" height="31"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="studio/network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCB-uI-BSx">
+                                        <rect key="frame" x="146" y="107" width="111" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -118,7 +118,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yeb-1h-upk">
                                         <rect key="frame" x="8" y="55" width="359" height="207"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit amet, at aliquam massa elit quam amet, pharetra elit vel sodales dignissim, eu habitasse urna suspendisse quam velit, ligula sit neque lorem tempor. Dui sapien a lacus, mi lacus. Interdum ac ut tellus donec, posuere pede consectetuer luctus, praesent aptent commodo nam, ante eu elit est sociis dui, eu duis donec et aenean vel diam. Faucibus orci mauris pulvinar feugiat non. Neque mattis lectus imperdiet justo neque cum, morbi pulvinar volutpat ac. Primis lorem. Sed augue sed pharetra in, phasellus ligula nisl eu aliquet nisl et, hac tellus facilisi imperdiet, varius luctus quis et. Sociis autem luctus mi, fermentum facilisis aliquam et dapibus, mauris diam etiam aliquet. Vestibulum leo sit eu erat justo, libero nec suspendisse sem convallis ullamcorper morbi, justo scelerisque non massa, id porro nulla sit tincidunt risus.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit amet, at aliquam massa elit quam amet, pharetra elit vel sodales dignissim, eu habitasse urna suspendisse quam velit, ligula sit neque lorem tempor. Dui sapien a lacus, mi lacus. Interdum ac ut tellus donec, posuere pede consectetuer luctus, praesent aptent commodo nam, ante eu elit est sociis dui, eu duis donec et aenean vel diam. Faucibus orci mauris pulvinar feugiat non. Neque mattis lectus imperdiet justo neque cum, morbi pulvinar volutpat ac. Primis lorem. Sed augue sed pharetra in, phasellus ligula nisl eu aliquet nisl et, hac tellus facilisi imperdiet, varius luctus quis et. Sociis autem luctus mi, fermentum facilisis aliquam et dapibus, mauris diam etiam aliquet. Vestibulum leo sit eu erat justo, libero nec suspendisse sem convallis ullamcorper morbi, justo scelerisque non massa, id porro nulla sit tincidunt risus.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -139,7 +139,16 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
                     <connections>
+                        <outlet property="castcss" destination="K65-2B-LWV" id="nEx-Eg-4qx"/>
+                        <outlet property="desc" destination="Yeb-1h-upk" id="bB9-Wn-gQW"/>
                         <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
+                        <outlet property="ep" destination="UEN-a5-nZw" id="ES8-SI-ue4"/>
+                        <outlet property="format" destination="dVf-TZ-Xbk" id="Ytq-ZX-PRc"/>
+                        <outlet property="studio" destination="pCB-uI-BSx" id="YDU-on-2Uy"/>
+                        <outlet property="summary" destination="uWu-W2-WVT" id="fgd-Zf-m9D"/>
+                        <outlet property="title" destination="0XM-y9-sOw" id="7Ft-WN-fRQ"/>
+                        <outlet property="witle" destination="0XM-y9-sOw" id="byy-Bg-9ED"/>
+                        <outlet property="yStart" destination="IXb-Nr-mVP" id="FzO-JR-vmJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
@@ -164,27 +173,27 @@
         <scene sceneID="smW-Zh-WAh">
             <objects>
                 <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="JSONBETTERXML" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r7i-6Z-zg0">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Arm-wq-HPj" detailTextLabel="9Rg-Xk-qbP" style="IBUITableViewCellStyleValue1" id="WCw-Qf-5nD">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
-                                            <rect key="frame" x="16" y="12" width="33" height="20"/>
+                                            <rect key="frame" x="16" y="12" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Rg-Xk-qbP">
-                                            <rect key="frame" x="315" y="12" width="44" height="20"/>
+                                            <rect key="frame" x="315" y="12" width="44" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>

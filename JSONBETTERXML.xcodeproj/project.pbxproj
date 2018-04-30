@@ -14,7 +14,6 @@
 		EB2C5C24205322B100DE6E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2C5C23205322B100DE6E62 /* Assets.xcassets */; };
 		EB2C5C27205322B100DE6E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2C5C25205322B100DE6E62 /* LaunchScreen.storyboard */; };
 		EB3D2AE220911ACE001385C5 /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3D2AE120911ACE001385C5 /* DataObject.swift */; };
-		EB3D2AE4209129E7001385C5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3D2AE3209129E7001385C5 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		EB2C5C26205322B100DE6E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2C5C28205322B100DE6E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB3D2AE120911ACE001385C5 /* DataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
-		EB3D2AE3209129E7001385C5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +61,8 @@
 				EB2C5C1A205322B000DE6E62 /* AppDelegate.swift */,
 				EB2C5C1C205322B000DE6E62 /* MasterViewController.swift */,
 				EB2C5C1E205322B000DE6E62 /* DetailViewController.swift */,
-				EB3D2AE3209129E7001385C5 /* DataController.swift */,
-				EB2C5C20205322B100DE6E62 /* Main.storyboard */,
 				EB3D2AE120911ACE001385C5 /* DataObject.swift */,
+				EB2C5C20205322B100DE6E62 /* Main.storyboard */,
 				EB2C5C25205322B100DE6E62 /* LaunchScreen.storyboard */,
 				EB2C5C23205322B100DE6E62 /* Assets.xcassets */,
 				EB2C5C28205322B100DE6E62 /* Info.plist */,
@@ -145,7 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB3D2AE4209129E7001385C5 /* DataController.swift in Sources */,
 				EB3D2AE220911ACE001385C5 /* DataObject.swift in Sources */,
 				EB2C5C1F205322B000DE6E62 /* DetailViewController.swift in Sources */,
 				EB2C5C1D205322B000DE6E62 /* MasterViewController.swift in Sources */,

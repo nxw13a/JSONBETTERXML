@@ -12,12 +12,41 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
-
+    @IBOutlet weak var witle: UILabel!
+    @IBOutlet weak var yStart: UILabel!
+    @IBOutlet weak var format: UILabel!
+    @IBOutlet weak var ep: UILabel!
+    @IBOutlet weak var studio: UILabel!
+    @IBOutlet weak var desc: UILabel!
+    @IBOutlet weak var summary: UILabel!
+    @IBOutlet weak var castcss: UIButton!
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = detailItem {
-            if let label = detailDescriptionLabel {
+            if let label = self.witle {
                 label.text = detail.name
+            }
+            if let label = self.yStart {
+                label.text = detail.yearStart + "-" + detail.yearEnd!
+            }
+            if let label = self.format {
+                label.text = detail.format
+            }
+            if let label = self.studio {
+                label.text = detail.studio! + "/" + detail.network!
+            }
+            if let label = self.ep {
+                label.text = "Episodes: " + String(detail.episodesCount
+                )
+            }
+            if let label = self.castcss {
+                label.tintColor = UIColor.red
+            }
+            if let label = self.summary {
+                label.text = detail.showSummary
+            }
+            if let label = self.desc {
+                label.text = detail.description
             }
         }
     }
