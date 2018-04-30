@@ -20,6 +20,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var desc: UILabel!
     @IBOutlet weak var summary: UILabel!
     @IBOutlet weak var castcss: UIButton!
+    
+    
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = detailItem {
@@ -27,13 +29,24 @@ class DetailViewController: UIViewController {
                 label.text = detail.name
             }
             if let label = self.yStart {
-                label.text = detail.yearStart + "-" + detail.yearEnd!
+                label.text = detail.yearStart
+                if let test = detail.yearEnd{
+                    label.text = detail.yearStart + "-"+test
+                }
             }
             if let label = self.format {
                 label.text = detail.format
             }
             if let label = self.studio {
-                label.text = detail.studio! + "/" + detail.network!
+                var temp = ""
+                //label.text =  detail.network!
+                if let test = detail.network{
+                    temp += test
+                }
+                if let test2 = detail.studio{
+                    temp += test2
+                }
+                label.text = temp
             }
             if let label = self.ep {
                 label.text = "Episodes: " + String(detail.episodesCount
@@ -46,7 +59,7 @@ class DetailViewController: UIViewController {
                 label.text = detail.showSummary
             }
             if let label = self.desc {
-                label.text = detail.description
+                label.text = detail.showDescription
             }
         }
     }

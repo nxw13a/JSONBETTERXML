@@ -20,21 +20,22 @@ class MasterViewController: UITableViewController {
     //the label we create
     
     override func viewDidLoad() {
+        getJsonFromUrl()
         super.viewDidLoad()
         //let imageView = UIImageView(image:#imageLiteral(resourceName: "Image"))
         //self.navigationItem.titleView = imageView
         self.navigationController?.navigationBar.barTintColor=UIColor.darkGray
-        getJsonFromUrl()
+        // let split
         //DataController.getJsonFromUrl()
         //        // Do any additional setup after loading the view, typically from a nib.
         //        navigationItem.leftBarButtonItem = editButtonItem
         //
         //        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
         //        navigationItem.rightBarButtonItem = addButton
-        //        if let split = splitViewController {
-        //            let controllers = split.viewControllers
-        //            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
-        //        }
+        if let split = splitViewController {
+                    let controllers = split.viewControllers
+                    detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+              }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,14 +47,14 @@ class MasterViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    /*
     @objc
     func insertNewObject(_ sender: Any) {
         //objects.insert(DataObject(), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
     }
-    
+    */
     // MARK: - Segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
@@ -83,15 +84,12 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         let object = fullData[indexPath.section][indexPath.row]
-        cell.textLabel!.text = object.name
+        cell.textLabel?.text = object.name
+        print(object.name)
         cell.detailTextLabel?.text = object.yearStart
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
     func getJsonFromUrl(){
         //creating a NSURL
         let url = NSURL(string: MY_DUMB_URL)
@@ -101,7 +99,7 @@ class MasterViewController: UITableViewController {
             
             if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
                 if let allThatData = jsonObj!.value(forKey: "datData") as? NSDictionary{
-                    print(allThatData)
+                    //print(allThatData)
                     
                     if let franchiseArray = allThatData.value(forKey: "franchise") as? NSArray{
                         
@@ -128,7 +126,7 @@ class MasterViewController: UITableViewController {
                             self.fullData.append(self.objectsReturned)
                         }
                     }
-                    print(self.fullData)
+                    //print(self.fullData)
                 }
                 
             }
