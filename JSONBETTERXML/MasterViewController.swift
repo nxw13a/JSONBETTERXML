@@ -22,8 +22,9 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         getJsonFromUrl()
         super.viewDidLoad()
-        //let imageView = UIImageView(image:#imageLiteral(resourceName: "Image"))
-        //self.navigationItem.titleView = imageView
+        let imageView = UIImageView(image:#imageLiteral(resourceName: "Image"))
+        self.navigationItem.titleView = imageView
+        
         self.navigationController?.navigationBar.barTintColor=UIColor.darkGray
         // let split
         //DataController.getJsonFromUrl()

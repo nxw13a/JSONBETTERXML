@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-38" y="-630"/>
         </scene>
-        <!--Detail-->
+        <!--Title-->
         <scene sceneID="yUG-lL-AsK">
             <objects>
-                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="JSONBETTERXML" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="JEX-9P-axG" userLabel="Title" customClass="DetailViewController" customModule="JSONBETTERXML" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,14 +74,6 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QK0-hI-GgX">
                                         <rect key="frame" x="146" y="107" width="102.5" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="studio/network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCB-uI-BSx">
-                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="year label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXb-Nr-mVP">
                                         <rect key="frame" x="146" y="44" width="102" height="31"/>
@@ -98,6 +90,13 @@
                                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="studio/network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCB-uI-BSx">
+                                        <rect key="frame" x="146" y="107" width="208" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
@@ -105,15 +104,15 @@
                                 <rect key="frame" x="0.0" y="266" width="375" height="401"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label full of some hopefully useful text about the thingz that we got back in the JSON" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWu-W2-WVT">
-                                        <rect key="frame" x="8" y="8" width="359" height="39"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label full of some hopefully useful text about the thingz that we got back in the JSON" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWu-W2-WVT">
+                                        <rect key="frame" x="8" y="0.0" width="359" height="104"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yeb-1h-upk">
-                                        <rect key="frame" x="8" y="55" width="359" height="207"/>
+                                        <rect key="frame" x="8" y="112" width="359" height="207"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Lorem ipsum dolor sit amet, at aliquam massa elit quam amet, pharetra elit vel sodales dignissim, eu habitasse urna suspendisse quam velit, ligula sit neque lorem tempor. Dui sapien a lacus, mi lacus. Interdum ac ut tellus donec, posuere pede consectetuer luctus, praesent aptent commodo nam, ante eu elit est sociis dui, eu duis donec et aenean vel diam. Faucibus orci mauris pulvinar feugiat non. Neque mattis lectus imperdiet justo neque cum, morbi pulvinar volutpat ac. Primis lorem. Sed augue sed pharetra in, phasellus ligula nisl eu aliquet nisl et, hac tellus facilisi imperdiet, varius luctus quis et. Sociis autem luctus mi, fermentum facilisis aliquam et dapibus, mauris diam etiam aliquet. Vestibulum leo sit eu erat justo, libero nec suspendisse sem convallis ullamcorper morbi, justo scelerisque non massa, id porro nulla sit tincidunt risus.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -134,6 +133,7 @@
                         <outlet property="desc" destination="Yeb-1h-upk" id="4cn-Qo-ghU"/>
                         <outlet property="ep" destination="UEN-a5-nZw" id="Do2-dM-6Ro"/>
                         <outlet property="format" destination="dVf-TZ-Xbk" id="Gyk-Q7-i5A"/>
+                        <outlet property="image" destination="b0r-2g-2ZL" id="ZTa-MB-7uL"/>
                         <outlet property="studio" destination="pCB-uI-BSx" id="w7U-Yh-30V"/>
                         <outlet property="summary" destination="uWu-W2-WVT" id="BV9-9d-f0b"/>
                         <outlet property="witle" destination="0XM-y9-sOw" id="3le-PN-7dT"/>
